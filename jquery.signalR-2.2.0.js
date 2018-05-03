@@ -1508,14 +1508,12 @@
     },
 
     triggerReceived: function (connection, data) {
-      alert('triggerReceived')
       if (!connection._.connectingMessageBuffer.tryBuffer(data)) {
         $(connection).triggerHandler(events.onReceived, [data]);
       }
     },
 
     processMessages: function (connection, minData, onInitialized) {
-      alert('processMessages')
       var data;
 
       // Update the last message time stamp
@@ -1940,7 +1938,6 @@
       }, false);
 
       connection.eventSource.addEventListener("message", function (e) {
-        alert('connection.eventSource.addEventListener message')
         var res;
 
         // process messages
@@ -2845,8 +2842,6 @@
 
         // Trigger the local invocation event
         proxy = this.proxies[hubName];
-
-        alert('connection.received ' + makeEventName(eventName) +' '+ data.Args.join(''));
 
         // Update the hub state
         $.extend(proxy.state, data.State);
