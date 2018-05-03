@@ -1,5 +1,5 @@
 {
-  "name": "react-native-signalr",
+  "name": "@nois/react-native-signalr",
   "version": "1.0.0",
   "description": "SignalR (2.2.0) for React-Native",
   "main": "index.js",
