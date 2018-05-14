@@ -1,3 +1,4 @@
+```
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -92,3 +93,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+```
